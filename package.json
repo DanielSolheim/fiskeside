@@ -1,0 +1,25 @@
+{
+  "name": "fiskeside",
+  "version": "1.0.0",
+  "description": "Bruker sass compile, Minify pics and Browser sync. Denne siden er til workflow 2 CA og en side jeg skal bygge videre på senere. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanielSolheim/fiskeside.git"
+  },
+  "author": "Daniel Solheim",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}

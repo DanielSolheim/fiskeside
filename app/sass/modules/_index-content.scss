@@ -1,0 +1,38 @@
+
+
+
+body {
+  overflow-x: hidden;
+}
+#fishContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 200px;
+}
+
+
+.fishCard {
+  background-image: url("../images/sea.jfif");
+  text-align: center;
+  width: 85%;
+  margin-left: 7.5%;
+  margin-top: 20px;
+
+
+
+}
+
+
+.fish-img {
+  width: 100%;
+}
+
+.fish-name{
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  margin-top: 0
+
+}
