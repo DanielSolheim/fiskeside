@@ -36,7 +36,7 @@
 //  cardContainer.appendChild(card);
 
 
-var  api = 'https://raw.githubusercontent.com/DanielSolheim/json-filer/master/fisk.json';
+var  api = 'https://raw.githubusercontent.com/DanielSolheim/fiskeside/master/app/jon/fisk.json';
 
 
 
@@ -56,36 +56,57 @@ var  api = 'https://raw.githubusercontent.com/DanielSolheim/json-filer/master/fi
 
 
 function createFish(result){
-   console.log(result)
-for(var i = 0; i < result.length; i++){
-
-  //fetching main container and creating cards
-   var fishContainer = document.getElementById('fishContainer');
-
-   var fishCard = document.createElement('div');
-   fishCard.setAttribute('class', 'fishCard');
-   fishContainer.appendChild(fishCard);
 
 
-   //adding some text to the Cards
-   var fishType = document.createElement('p');
-   fishType.setAttribute('class', 'fish-name');
-   fishCard.appendChild(fishType);
-   var fishTypeText =
-   document.createTextNode(result[i].name);
-   fishType.appendChild(fishTypeText);
+for(var i = 0; i < 1; i++){
 
 
-   var fishImg = document.createElement('img')
-   fishImg.setAttribute('src', 'dist/images/' + result[i].name + '.png');
-   fishImg.setAttribute('class', 'fish-img');
+  var myFish = document.getElementById('fishContainer');
+
+ const fishArray = result.map(function(article){
+   return `
+    <div class="fishcard"
+      <p>${article.name}</p>
+      <img id="test" src="${article.url + article.name + '.jpg'}" alt="${article.name + " image"}">
+    </div>
+
+   `
+ }).join("");
+
+ myFish.innerHTML = fishArray;
+
+
+ var going = document.getElementById('test');
+ console.log(going);
+  ////fetching main container and creating cards
+  // var fishContainer = document.getElementById('fishContainer');
+
+  // var fishCard = document.createElement('div');
+  // fishCard.setAttribute('class', 'fishCard');
+  // fishContainer.appendChild(fishCard);
+
+
+  // //adding some text to the Cards
+  // var fishType = document.createElement('p');
+  // fishType.setAttribute('class', 'fish-name');
+  // fishCard.appendChild(fishType);
+  // var fishTypeText =
+  // document.createTextNode(result[i].name);
+  // fishType.appendChild(fishTypeText);
+
+
+  // var fishImg = document.createElement('img')
+  // fishImg.setAttribute('src', 'dist/images/' + result[i].name + '.png');
+  // fishImg.setAttribute('class', 'fish-img');
 
 
 
-   fishCard.appendChild(fishImg)
+   //fishCard.appendChild(fishImg)
 
 
 } //for looop
+
+
 
 } //createfish function
 
