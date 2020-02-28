@@ -2,30 +2,34 @@
 {
 
   "name": "torsk",
-  "url": "./dist/images/",
+  "imgurl": "./dist/images/",
   "shortinfo": "Torsk er en fisk som lever i havet, den liker å spise krabber",
+  "id": 1,
   "info": "Torsk er en fisk som lever i havet, den liker å spise krabber og den hater alle andre dyr"
 },
 
 
 {
   "name": "lyr",
-  "url": "./dist/images/",
+  "imgurl": "./dist/images/",
   "shortinfo": "Torsk er en fisk som lever i havet, den liker å spise krabber",
+  "id": 2,
   "info": "Torsk er en fisk som lever i havet, den liker å spise krabber og den hater alle andre dyr"
 },
 
 {
   "name": "laks",
-  "url": "./dist/images/",
+  "imgurl": "./dist/images/",
   "shortinfo": "Torsk er en fisk som lever i havet, den liker å spise krabber",
+  "id": 3,
   "info": "Torsk er en fisk som lever i havet, den liker å spise krabber og den hater alle andre dyr"
 },
 
 {
   "name": "ørret",
-  "url": "./dist/images/",
+  "imgurl": "./dist/images/",
   "shortinfo": "Torsk er en fisk som lever i havet, den liker å spise krabber",
+  "id": 4,
   "info": "Torsk er en fisk som lever i havet, den liker å spise krabber og den hater alle andre dyr"
 }
 

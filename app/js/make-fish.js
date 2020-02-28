@@ -65,27 +65,28 @@ for(var i = 0; i < 1; i++){
 
  const fishArray = result.map(function(article){
    return `
-    <div class="fishcard"
-      <p>${article.name}</p>
-      <img id="test" src="${article.url + article.name + '.jpg'}" alt="${article.name + " image"}">
+    <div class="fishCard">
+      <p class="fish-name">${article.name}</p>
+      <img class="fish-img" src="${article.imgurl + article.name + '.png'}" alt="${article.name + " image"}">
+      <p class="shortInfo"> ${article.shortinfo} </p>
+      <a src="google.com">
+      <button onclick="window.location.href = 'https://google.com'"> See more </button>
+      </a>
     </div>
-
    `
  }).join("");
 
  myFish.innerHTML = fishArray;
 
 
- var going = document.getElementById('test');
- console.log(going);
+
+
+
   ////fetching main container and creating cards
   // var fishContainer = document.getElementById('fishContainer');
-
   // var fishCard = document.createElement('div');
   // fishCard.setAttribute('class', 'fishCard');
   // fishContainer.appendChild(fishCard);
-
-
   // //adding some text to the Cards
   // var fishType = document.createElement('p');
   // fishType.setAttribute('class', 'fish-name');
@@ -93,14 +94,9 @@ for(var i = 0; i < 1; i++){
   // var fishTypeText =
   // document.createTextNode(result[i].name);
   // fishType.appendChild(fishTypeText);
-
-
   // var fishImg = document.createElement('img')
   // fishImg.setAttribute('src', 'dist/images/' + result[i].name + '.png');
   // fishImg.setAttribute('class', 'fish-img');
-
-
-
    //fishCard.appendChild(fishImg)
 
 
