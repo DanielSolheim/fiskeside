@@ -58,7 +58,7 @@ var  api = 'https://raw.githubusercontent.com/DanielSolheim/fiskeside/master/app
 function createFish(result){
 
 
-for(var i = 0; i < 1; i++){
+
 
 
   var myFish = document.getElementById('fishContainer');
@@ -67,7 +67,7 @@ for(var i = 0; i < 1; i++){
    return `
     <div class="fishCard">
       <p class="fish-name">${article.name}</p>
-      <img class="fish-img" src="${article.imgurl + article.name + '.png'}" alt="${article.name + " image"}">
+      <img class="fish-img" src="${article.url + article.name + '.png'}" alt="${article.name + " image"}">
       <p class="shortInfo"> ${article.shortinfo} </p>
       <a src="google.com">
       <button onclick="window.location.href = 'https://google.com'"> See more </button>
@@ -100,7 +100,7 @@ for(var i = 0; i < 1; i++){
    //fishCard.appendChild(fishImg)
 
 
-} //for looop
+
 
 
 

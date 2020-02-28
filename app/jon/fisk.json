@@ -5,7 +5,8 @@
   "imgurl": "./dist/images/",
   "shortinfo": "Torsk er en fisk som lever i havet, den liker å spise krabber",
   "id": 1,
-  "info": "Torsk er en fisk som lever i havet, den liker å spise krabber og den hater alle andre dyr"
+  "info": "Torsk er en fisk som lever i havet, den liker å spise krabber og den hater alle andre dyr",
+  "url": "./dist/sub-pages/fish-specific.html"; 
 },
 
 
