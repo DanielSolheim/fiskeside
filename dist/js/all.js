@@ -1,3 +1,8 @@
+var fish_url_string = "file:///C:/Users/Daniel/Desktop/Fiskeside/dist/sub-pages/fish-specific.html?id=1"; //window.location.href
+var fish_url = new URL(fish_url_string);
+var c = fish_url.searchParams.get("id");
+console.log(c);
+
 ///*Referance to the starting page of the game */
 //
 //
@@ -45,13 +50,14 @@ var  api = 'https://raw.githubusercontent.com/DanielSolheim/fiskeside/master/app
      .then(result => result.json())
      .then((res) =>{
 
-       createFish(res);
+       createFish(res)
      })
      .catch(err => console.log(err));
 
 
 
-
+   // Createfish is now being executed for every page.
+   // I want it to only be executed
 
 
 
@@ -60,17 +66,17 @@ function createFish(result){
 
 
 
-
+//
   var myFish = document.getElementById('fishContainer');
 
  const fishArray = result.map(function(article){
    return `
     <div class="fishCard">
       <p class="fish-name">${article.name}</p>
-      <img class="fish-img" src="${article.url + article.name + '.png'}" alt="${article.name + " image"}">
+      <img class="fish-img" src="${article.imgurl + article.name + '.png'}" alt="${article.name + " image"}">
       <p class="shortInfo"> ${article.shortinfo} </p>
       <a src="google.com">
-      <button onclick="window.location.href = 'https://google.com'"> See more </button>
+      <button onclick="window.location.href = './dist/sub-pages/fish-specific.html?id=1'"> See more </button>
       </a>
     </div>
    `
